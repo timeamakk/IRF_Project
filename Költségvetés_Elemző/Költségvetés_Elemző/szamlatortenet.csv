@@ -16,7 +16,7 @@ könyvelés dátuma,	tranzakció azonosító,			típus,								könyvelési szá
 2020.11.09	,		Y0017-VLNUUD-100,			Csomagdíj visszatérítés,			104001718677777785681009,			Számlatulajdonos,					Számlacsomag díj visszatérítés bef.,		2883,			HUF,
 2020.11.09	,		Y0017-VLNUUD-100,			Prémium számlavezetési díj,			104001718677777785681009,			Számlatulajdonos,					Számlacsomag díj,							-5766,			HUF,                                                                                           											
 2020.11.04	,		099901104H002997,			Átvezetés - rendszeres,				104001718677777785681009,			Számlatulajdonos,					rendszeres megtakarításba,					-51000,			HUF,	
-2020.11.02	,		NOTPROVIDED		,			Kamat;								104001718677777785681009,			Számlatulajdonos,					KAMAT,										300,			HUF,												
+2020.11.02	,		NOTPROVIDED		,			Kamat,								104001718677777785681009,			Számlatulajdonos,					KAMAT,										300,			HUF,												
 2020.10.08	,		Y0017-VLNUUD-100,			Csomagdíj visszatérítés,			104001718677777785681009,			Számlatulajdonos,					Számlacsomag díj visszatérítés bef.,		2883,			HUF,
 2020.10.08	,		Y0017-VLNUUD-100,			Csomagdíj visszatérítés,			104001718677777785681009,			Számlatulajdonos,					Számlacsomag díj visszatérítés bef.	,		2883,			HUF,
 2020.10.08,			Y0017-VLNUUD-100,			Prémium számlavezetési díj,			104001718677777785681009,			Számlatulajdonos,					Számlacsomag díj,							-5766,			HUF,                                                                                           											

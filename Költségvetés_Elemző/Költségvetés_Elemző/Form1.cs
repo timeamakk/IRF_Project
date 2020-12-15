@@ -20,8 +20,7 @@ namespace Költségvetés_Elemző
         public Form1()
         {
             InitializeComponent();
-
-           
+                       
 
             LoadSzamlatortenet();
 
@@ -51,7 +50,7 @@ namespace Költségvetés_Elemző
                     szm.könyvelési_számla = line[3];
                     szm.könyvelési_számla_elnevezése = line[4];
                     szm.partner_számla_elnevezése = line[5];
-                    szm.összeg = line[6];
+                    szm.összeg =   double.Parse(line[6]);
                     szm.deviza = line[7];
 
                     _szamlamozgas.Add(szm);

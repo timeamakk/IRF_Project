@@ -14,7 +14,7 @@ namespace Költségvetés_Elemző
         public string könyvelési_számla { get; set; }
         public string könyvelési_számla_elnevezése { get; set; }
         public string partner_számla_elnevezése { get; set; }
-        public string összeg { get; set; }
+        public double összeg { get; set; }
         public string deviza { get; set; }
     }
 }
