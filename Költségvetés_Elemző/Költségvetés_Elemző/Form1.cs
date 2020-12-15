@@ -35,7 +35,7 @@ namespace Költségvetés_Elemző
         {
             
 
-            using (StreamReader sr = new StreamReader("szamlatortenet.csv", Encoding.Default))
+            using (StreamReader sr = new StreamReader("szamlatortenet.csv", Encoding.UTF8))
             {
                 sr.ReadLine();
                 while (!sr.EndOfStream)
