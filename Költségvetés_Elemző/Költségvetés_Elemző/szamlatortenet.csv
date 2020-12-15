@@ -1,4 +1,4 @@
-könyvelés dátuma,	tranzakció azonosító,			típus,								könyvelési számla,				könyvelési számla elnevezése,			partner számla	elnevezése,					összeg,			összeg devizaneme;	
+könyvelés dátuma,	tranzakció azonosító,			típus,								könyvelési számla,				könyvelési számla elnevezése,			partner számla	elnevezése,					összeg,			összeg devizaneme,	
 2020.12.12,			464498******2126,			Bankkártya tranzakció foglalás,		104001718677777785681009,			Számlatulajdonos,					Közösköltség,								-15930,			HUF,													
 2020.12.10,			464498******2126,			Készpénzbefizetés K&H ATM-be,		104001718677777785681009,			Számlatulajdonos,					Budapest Margit krt. 43-45,					110000,			HUF,												
 2020.12.08,			Y0017-VLNUUD-100,			Csomagdíj visszatérítés,			104001718677777785681009,			Számlatulajdonos,					Számlacsomag díj visszatérítés vásáR,		2883,			HUF,

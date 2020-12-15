@@ -14,7 +14,7 @@ namespace Költségvetés_Elemző
     public partial class Form1 : Form
     {
 
-        private List<Szamlamozgas> _szamlamozgas = new List<Szamlamozgas>();
+         List<Szamlamozgas> _szamlamozgas = new List<Szamlamozgas>();
 
        
         public Form1()
@@ -22,7 +22,10 @@ namespace Költségvetés_Elemző
             InitializeComponent();
 
             LoadSzamlatortenet();
-            
+
+           dataGridView1.DataSource = _szamlamozgas;
+
+
         }
 
         private void LoadSzamlatortenet()
