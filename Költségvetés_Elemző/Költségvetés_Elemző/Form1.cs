@@ -14,7 +14,7 @@ namespace Költségvetés_Elemző
     public partial class Form1 : Form
     {
 
-        private List<Szamlamozgas> szamlamozgas = new List<Szamlamozgas>();
+        private List<Szamlamozgas> _szamlamozgas = new List<Szamlamozgas>();
 
        
         public Form1()
@@ -35,6 +35,7 @@ namespace Költségvetés_Elemző
                     string[] line = sr.ReadLine().Split(',');
 
                     Szamlamozgas szm = new Szamlamozgas();
+
                     szm.könyvelés_dátuma = DateTime.Parse(line[0]);
                     szm.tranzakció_azonosító = line[1];
                     szm.típus = line[2];
@@ -43,6 +44,8 @@ namespace Költségvetés_Elemző
                     szm.partner_számla_elnevezése = line[5];
                     szm.összeg = line[6];
                     szm.deviza = line[7];
+
+                    _szamlamozgas.Add(szm);
 
                 }
             }
