@@ -8,13 +8,13 @@ namespace Költségvetés_Elemző
 {
     class Szamlamozgas
     {
-        public DateTime könyvelés_dátuma;
-        public string tranzakció_azonosító;
-        public string típus;
-        public string könyvelési_számla ;
-        public string könyvelési_számla_elnevezése;
-        public string partner_számla_elnevezése;
-        public string összeg;
-        public string deviza;
+        public DateTime könyvelés_dátuma { get; set; }
+        public string tranzakció_azonosító { get; set; }
+        public string típus { get; set; }
+        public string könyvelési_számla { get; set; }
+        public string könyvelési_számla_elnevezése { get; set; }
+        public string partner_számla_elnevezése { get; set; }
+        public string összeg { get; set; }
+        public string deviza { get; set; }
     }
 }

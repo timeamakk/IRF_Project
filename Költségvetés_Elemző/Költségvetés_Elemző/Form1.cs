@@ -14,22 +14,28 @@ namespace Költségvetés_Elemző
     public partial class Form1 : Form
     {
 
-         List<Szamlamozgas> _szamlamozgas = new List<Szamlamozgas>();
+        List<Szamlamozgas> _szamlamozgas = new List<Szamlamozgas>();
+        
 
-       
         public Form1()
         {
             InitializeComponent();
 
+           
+
             LoadSzamlatortenet();
 
-           dataGridView1.DataSource = _szamlamozgas;
+            
+            dataGridView1.DataSource = _szamlamozgas;
+           
 
 
         }
 
         private void LoadSzamlatortenet()
         {
+            
+
             using (StreamReader sr = new StreamReader("szamlatortenet.csv", Encoding.Default))
             {
                 sr.ReadLine();
