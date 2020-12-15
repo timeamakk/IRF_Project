@@ -1,23 +1,23 @@
 könyvelés dátuma;	tranzakció azonosító;			típus;									könyvelési számla;					könyvelési számla elnevezése;			partner számla	elnevezése;					összeg			összeg devizaneme	
-2020.12.12;			464498******2126;			Bankkártya tranzakció foglalás;		104001718676788585681009;			Számlatulajdonos;					Mandala Mozgasstudi   Budaors	;			-15930			HUF													
-2020.12.10;			464498******2126;			Készpénzbefizetés K&H ATM-be;		104001718676788585681009;			Számlatulajdonos;					Budapest Margit krt. 43-45		;			110000			HUF													
-2020.12.08;			Y0017-VLNUUD-100;			Csomagdíj visszatérítés;			104001718676788585681009;			Számlatulajdonos;					Számlacsomag díj visszatérítés vásáR;		2883			HUF
-2020.12.08;			Y0017-VLNUUD-100;			Csomagdíj visszatérítés;			104001718676788585681009;			Számlatulajdonos;					Számlacsomag díj visszatérítés vásáR;		2883			HUF
-2020.12.08;			464498******2126;			Vásárlás belföldi kereskedőnél;		104001718676788585681009;			Számlatulajdonos;					OTPMOBL VODAFONE.HU	;						-5390			HUF													
-2020.12.08;			464498******2126;			Vásárlás belföldi kereskedőnél;		104001718676788585681009;			Számlatulajdonos;					GALGAFARM;									-8429			HUF													
-2020.12.08;			Y0017-VLNUUD-100;			Prémium számlavezetési díj;			104001718676788585681009;			Számlatulajdonos;					Számlacsomag díj	;						-5766			HUF	                                                                                           											
-2020.12.04;			464498******2126;			Vásárlás belföldi kereskedőnél;		104001718676788585681009;			Számlatulajdonos;					OTPMOBL VODAFONE.HU	;						-2360			HUF													
-2020.12.04;			099901204H003318;			Átvezetés - rendszeres;				104001718676788585681009;			Számlatulajdonos;					rendszeres megtakarításba;					-51000			HUF																									
-2020.12.03;			464498******2126;			Vásárlás belföldi kereskedőnél;		104001718676788585681009;			Számlatulajdonos;					SPAR PARTNER 6911700	;					-3204			HUF													
-2020.11.30;			NOTPROVIDED		;			Kamat;								104001718676788585681009;			Számlatulajdonos;					KAMAT;										2				HUF													
-2020.11.23;			464498******2126;			Készpénzbefizetés K&H ATM-be;		104001718676788585681009;			Számlatulajdonos;					Budapest Magyar Jakobinuso;					140000			HUF													
-2020.11.17;			464498******2126;			Vásárlás belföldi kereskedőnél;		104001718676788585681009;			Számlatulajdonos;					IKEA lakberendezes online;					-187195			HUF													
-2020.11.09;			Y0017-VLNUUD-100;			Csomagdíj visszatérítés;			104001718676788585681009;			Számlatulajdonos;					Számlacsomag díj visszatérítés bef.;		2883			HUF
-2020.11.09;			Y0017-VLNUUD-100;			Csomagdíj visszatérítés;			104001718676788585681009;			Számlatulajdonos;					Számlacsomag díj visszatérítés bef.;		2883			HUF
-2020.11.09;			Y0017-VLNUUD-100;			Prémium számlavezetési díj;			104001718676788585681009;			Számlatulajdonos;					Számlacsomag díj;							-5766			HUF	                                                                                           											
-2020.11.04;			099901104H002997;			Átvezetés - rendszeres;				104001718676788585681009;			Számlatulajdonos;					rendszeres megtakarításba;					-51000			HUF		
-2020.11.02;			NOTPROVIDED	;				Kamat;								104001718676788585681009;			Számlatulajdonos;					KAMAT;										3				HUF													
-2020.10.08;			Y0017-VLNUUD-100;			Csomagdíj visszatérítés;			104001718676788585681009;			Számlatulajdonos;					Számlacsomag díj visszatérítés bef.	;		2883			HUF
-2020.10.08;			Y0017-VLNUUD-100;		Csomagdíj visszatérítés;			104001718676788585681009;			Számlatulajdonos;					Számlacsomag díj visszatérítés bef.	;		2883			HUF
-2020.10.08;			Y0017-VLNUUD-100;			Prémium számlavezetési díj;			104001718676788585681009;			Számlatulajdonos;					Számlacsomag díj;							-5766			HUF	                                                                                           											
-2020.09.30;			NOTPROVIDED		;			Kamat;								104001718676788585681009;			Számlatulajdonos;					KAMAT	;									4				HUF 												
+2020.12.12;			464498******2126;			Bankkártya tranzakció foglalás;		104001718677777785681009;			Számlatulajdonos;					Közösköltség;								-15930			HUF;													
+2020.12.10;			464498******2126;			Készpénzbefizetés K&H ATM-be;		104001718677777785681009;			Számlatulajdonos;					Budapest Margit krt. 43-45		;			110000			HUF	;												
+2020.12.08;			Y0017-VLNUUD-100;			Csomagdíj visszatérítés;			104001718677777785681009;			Számlatulajdonos;					Számlacsomag díj visszatérítés vásáR;		2883			HUF;
+2020.12.08;			Y0017-VLNUUD-100;			Csomagdíj visszatérítés;			104001718677777785681009;			Számlatulajdonos;					Számlacsomag díj visszatérítés vásáR;		2883			HUF;
+2020.12.08;			464498******2126;			Vásárlás belföldi kereskedőnél;		104001718677777785681009;			Számlatulajdonos;					OTPMOBL VODAFONE.HU	;						-5390			HUF	;												
+2020.12.08;			464498******2126;			Vásárlás belföldi kereskedőnél;		104001718677777785681009;			Számlatulajdonos;					FARM Élelmiszerbolt;						-8429			HUF	;												
+2020.12.08;			Y0017-VLNUUD-100;			Prémium számlavezetési díj;			104001718677777785681009;			Számlatulajdonos;					Számlacsomag díj	;						-5766			HUF	 ;                                                                                          											
+2020.12.04;			464498******2126;			Vásárlás belföldi kereskedőnél;		104001718677777785681009;			Számlatulajdonos;					OTPMOBL VODAFONE.HU	;						-2360			HUF;													
+2020.12.04;			099901204H003318;			Átvezetés - rendszeres;				104001718677777785681009;			Számlatulajdonos;					rendszeres megtakarításba;					-51000			HUF	;																								
+2020.12.03;			464498******2126;			Vásárlás belföldi kereskedőnél;		104001718677777785681009;			Számlatulajdonos;					SPAR PARTNER 6911700	;					-3204			HUF	;												
+2020.11.30;			NOTPROVIDED		;			Kamat;								104001718677777785681009;			Számlatulajdonos;					KAMAT;										200				HUF	;												
+2020.11.23;			464498******2126;			Készpénzbefizetés K&H ATM-be;		104001718677777785681009;			Számlatulajdonos;					Budapest Magyar Jakobinuso;					140000			HUF	;												
+2020.11.17;			464498******2126;			Vásárlás belföldi kereskedőnél;		104001718677777785681009;			Számlatulajdonos;					IKEA lakberendezes online;					-187195			HUF	;												
+2020.11.09;			Y0017-VLNUUD-100;			Csomagdíj visszatérítés;			104001718677777785681009;			Számlatulajdonos;					Számlacsomag díj visszatérítés bef.;		2883			HUF;
+2020.11.09;			Y0017-VLNUUD-100;			Csomagdíj visszatérítés;			104001718677777785681009;			Számlatulajdonos;					Számlacsomag díj visszatérítés bef.;		2883			HUF;
+2020.11.09;			Y0017-VLNUUD-100;			Prémium számlavezetési díj;			104001718677777785681009;			Számlatulajdonos;					Számlacsomag díj;							-5766			HUF	;                                                                                           											
+2020.11.04;			099901104H002997;			Átvezetés - rendszeres;				104001718677777785681009;			Számlatulajdonos;					rendszeres megtakarításba;					-51000			HUF	;	
+2020.11.02;			NOTPROVIDED	;				Kamat;								104001718677777785681009;			Számlatulajdonos;					KAMAT;										300				HUF	;												
+2020.10.08;			Y0017-VLNUUD-100;			Csomagdíj visszatérítés;			104001718677777785681009;			Számlatulajdonos;					Számlacsomag díj visszatérítés bef.	;		2883			HUF;
+2020.10.08;			Y0017-VLNUUD-100;			Csomagdíj visszatérítés;			104001718677777785681009;			Számlatulajdonos;					Számlacsomag díj visszatérítés bef.	;		2883			HUF;
+2020.10.08;			Y0017-VLNUUD-100;			Prémium számlavezetési díj;			104001718677777785681009;			Számlatulajdonos;					Számlacsomag díj;							-5766			HUF	;                                                                                           											
+2020.09.30;			NOTPROVIDED		;			Kamat;								104001718677777785681009;			Számlatulajdonos;					KAMAT	;									500				HUF ;												

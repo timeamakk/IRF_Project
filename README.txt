@@ -1,0 +1,1 @@
+Egyszerû elemzést lehet végezni online bankszámla alapján.
