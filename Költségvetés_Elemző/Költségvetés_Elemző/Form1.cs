@@ -35,7 +35,13 @@ namespace Költségvetés_Elemző
         {
             label1.Text = ((from Szamlamozgas in _szamlamozgas
                        select Szamlamozgas.összeg).Sum()).ToString();
-            
+
+            label4.Text = ((from Szamlamozgas in _szamlamozgas
+                            where Szamlamozgas.összeg<0
+                            select Szamlamozgas.összeg).Sum()).ToString();
+            label6.Text = ((from Szamlamozgas in _szamlamozgas
+                            where Szamlamozgas.összeg > 0
+                            select Szamlamozgas.összeg).Sum()).ToString();
         }
 
 
