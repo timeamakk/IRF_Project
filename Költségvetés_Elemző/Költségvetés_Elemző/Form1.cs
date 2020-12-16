@@ -21,30 +21,39 @@ namespace Költségvetés_Elemző
         public Form1()
         {
             InitializeComponent();
-
+            LoadCash();
             LoadSzamlatortenet();
-
-            //dataGridView1.DataSource = _szamlamozgas;
-
             Osszegzes();
 
 
         }
 
+        private void LoadCash()
+        {
+            Random rnd = new Random();
+            double kezdo = rnd.Next(200000, 400000);
+            txbKezdo.Text = kezdo.ToString();
+        }
+
         private void Osszegzes()
         {
-            label1.Text = ((from Szamlamozgas in _szamlamozgas
-                       select Szamlamozgas.összeg).Sum()).ToString();
+            
+                
+            double osszmozg = (from Szamlamozgas in _szamlamozgas
+                       select Szamlamozgas.összeg).Sum();
+            label1.Text = osszmozg.ToString();
 
             label4.Text = ((from Szamlamozgas in _szamlamozgas
                             where Szamlamozgas.összeg<0
                             select Szamlamozgas.összeg).Sum()).ToString();
+
             label6.Text = ((from Szamlamozgas in _szamlamozgas
                             where Szamlamozgas.összeg > 0
                             select Szamlamozgas.összeg).Sum()).ToString();
+
+            double v = (double.Parse(txbKezdo.Text) + osszmozg);
+            textBox2.Text = v.ToString();
         }
-
-
 
         private void LoadSzamlatortenet()
         {
@@ -54,9 +63,7 @@ namespace Költségvetés_Elemző
                 while (!sr.EndOfStream)
                 {
                     string[] line = sr.ReadLine().Split(',');
-
                     Szamlamozgas szm = new Szamlamozgas();
-
                     szm.könyvelés_dátuma = DateTime.Parse(line[0]);
                     szm.tranzakció_azonosító = line[1];
                     szm.típus = line[2];
@@ -65,11 +72,12 @@ namespace Költségvetés_Elemző
                     szm.partner_számla_elnevezése = line[5];
                     szm.összeg = double.Parse(line[6]);
                     szm.deviza = line[7];
-
+                    szm.besorolás = false;
                     _szamlamozgas.Add(szm);
-
                 }
             }
+
+            
         }
 
         private void btnAdat_Click(object sender, EventArgs e)
@@ -81,30 +89,34 @@ namespace Költségvetés_Elemző
                            Tranzakció_azonosító = Szamlamozgas.tranzakció_azonosító,
                            Típus = Szamlamozgas.típus,
                            Partnerszamlaneve = Szamlamozgas.partner_számla_elnevezése,
-                           Összeg = Szamlamozgas.összeg
+                           Összeg = Szamlamozgas.összeg,
+                           Besorolás = Szamlamozgas.besorolás
 
 
                        }).ToList();
 
             dataGridView1.DataSource = _szmlmzg;
             chart1.DataSource = _szamlamozgas;
+
         }
 
         private void btn_Diagram_Click(object sender, EventArgs e)
         {
-            var series = chart1.Series[  0];
-            series.ChartType = SeriesChartType.Line;
+            var series = chart1.Series[0];
             series.XValueMember = "könyvelés_dátuma";
+            series.XValueType = ChartValueType.Date;
             series.YValueMembers = "összeg";
 
             var legend = chart1.Legends[0];
             legend.Enabled = false;
 
-            var chartArea = chart1.ChartAreas[0];
-            chartArea.AxisX.MajorGrid.Enabled = false;
+            var chartArea = chart1.ChartAreas[0];           
             chartArea.AxisY.MajorGrid.Enabled = false;
             chartArea.AxisY.IsStartedFromZero = false;
 
         }
+
+       
+        
     }
 }

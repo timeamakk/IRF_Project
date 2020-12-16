@@ -16,5 +16,8 @@ namespace Költségvetés_Elemző
         public string partner_számla_elnevezése { get; set; }
         public double összeg { get; set; }
         public string deviza { get; set; }
+
+        public bool besorolás { get; set; } 
+
     }
 }
