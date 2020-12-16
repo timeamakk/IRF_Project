@@ -14,27 +14,33 @@ namespace Költségvetés_Elemző
     public partial class Form1 : Form
     {
 
-        List<Szamlamozgas> _szamlamozgas = new List<Szamlamozgas>();
-        
+        BindingList<Szamlamozgas> _szamlamozgas = new BindingList<Szamlamozgas>();
+
 
         public Form1()
         {
             InitializeComponent();
-                       
 
             LoadSzamlatortenet();
 
-            
             dataGridView1.DataSource = _szamlamozgas;
-           
+
+            Osszegzes();
 
 
         }
 
+        private void Osszegzes()
+        {
+            label1.Text = ((from Szamlamozgas in _szamlamozgas
+                       select Szamlamozgas.összeg).Sum()).ToString();
+            
+        }
+
+
+
         private void LoadSzamlatortenet()
         {
-            
-
             using (StreamReader sr = new StreamReader("szamlatortenet.csv", Encoding.UTF8))
             {
                 sr.ReadLine();
@@ -50,7 +56,7 @@ namespace Költségvetés_Elemző
                     szm.könyvelési_számla = line[3];
                     szm.könyvelési_számla_elnevezése = line[4];
                     szm.partner_számla_elnevezése = line[5];
-                    szm.összeg =   double.Parse(line[6]);
+                    szm.összeg = double.Parse(line[6]);
                     szm.deviza = line[7];
 
                     _szamlamozgas.Add(szm);
@@ -59,9 +65,19 @@ namespace Költségvetés_Elemző
             }
         }
 
+        private void btnAdat_Click(object sender, EventArgs e)
+        {
+            var ezis = from Szamlamozgas in _szamlamozgas
+                       select new
+                       {
+                           cím = Szamlamozgas.könyvelés_dátuma,
+                           Összeg = Szamlamozgas.összeg
+                       };
+
+            dataGridView1.DataSource = ezis;
+        }
+
+
 
     }
-
-
-
 }
