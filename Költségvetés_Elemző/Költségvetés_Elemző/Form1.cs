@@ -81,15 +81,24 @@ namespace Költségvetés_Elemző
                        }).ToList();
 
             dataGridView1.DataSource = _szmlmzg;
-            chart1.DataSource = _szmlmzg;
+            chart1.DataSource = _szamlamozgas;
         }
 
         private void btn_Diagram_Click(object sender, EventArgs e)
         {
-            var series = chart1.Series[0];
+            var series = chart1.Series[  0];
             series.ChartType = SeriesChartType.Line;
-            series.XValueMember = "Date";
-            series.YValueMembers = "Value";
+            series.XValueMember = "könyvelés_dátuma";
+            series.YValueMembers = "összeg";
+
+            var legend = chart1.Legends[0];
+            legend.Enabled = false;
+
+            var chartArea = chart1.ChartAreas[0];
+            chartArea.AxisX.MajorGrid.Enabled = false;
+            chartArea.AxisY.MajorGrid.Enabled = false;
+            chartArea.AxisY.IsStartedFromZero = false;
+
         }
     }
 }
