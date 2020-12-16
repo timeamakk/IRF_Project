@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Költségvetés_Elemző
 {
@@ -15,7 +16,7 @@ namespace Költségvetés_Elemző
     {
 
         BindingList<Szamlamozgas> _szamlamozgas = new BindingList<Szamlamozgas>();
-
+       
 
         public Form1()
         {
@@ -23,7 +24,7 @@ namespace Költségvetés_Elemző
 
             LoadSzamlatortenet();
 
-            dataGridView1.DataSource = _szamlamozgas;
+            //dataGridView1.DataSource = _szamlamozgas;
 
             Osszegzes();
 
@@ -67,9 +68,28 @@ namespace Költségvetés_Elemző
 
         private void btnAdat_Click(object sender, EventArgs e)
         {
+            var _szmlmzg =( from Szamlamozgas in _szamlamozgas
+                       select new
+                       {
+                           Dátum = Szamlamozgas.könyvelés_dátuma,
+                           Tranzakció_azonosító = Szamlamozgas.tranzakció_azonosító,
+                           Típus = Szamlamozgas.típus,
+                           Partnerszamlaneve = Szamlamozgas.partner_számla_elnevezése,
+                           Összeg = Szamlamozgas.összeg
+
+
+                       }).ToList();
+
+            dataGridView1.DataSource = _szmlmzg;
+            chart1.DataSource = _szmlmzg;
         }
 
-
-
+        private void btn_Diagram_Click(object sender, EventArgs e)
+        {
+            var series = chart1.Series[0];
+            series.ChartType = SeriesChartType.Line;
+            series.XValueMember = "Date";
+            series.YValueMembers = "Value";
+        }
     }
 }
