@@ -67,14 +67,6 @@ namespace Költségvetés_Elemző
 
         private void btnAdat_Click(object sender, EventArgs e)
         {
-            var ezis = from Szamlamozgas in _szamlamozgas
-                       select new
-                       {
-                           cím = Szamlamozgas.könyvelés_dátuma,
-                           Összeg = Szamlamozgas.összeg
-                       };
-
-            dataGridView1.DataSource = ezis;
         }
 
 
