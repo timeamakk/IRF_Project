@@ -16,7 +16,7 @@ namespace Költségvetés_Elemző
     {
 
         BindingList<Szamlamozgas> _szamlamozgas = new BindingList<Szamlamozgas>();
-       
+      
 
         public Form1()
         {
@@ -25,7 +25,7 @@ namespace Költségvetés_Elemző
             LoadSzamlatortenet();
             Osszegzes();
 
-
+           
         }
 
         private void LoadCash()
@@ -72,7 +72,7 @@ namespace Költségvetés_Elemző
                     szm.partner_számla_elnevezése = line[5];
                     szm.összeg = double.Parse(line[6]);
                     szm.deviza = line[7];
-                    szm.besorolás = false;
+                    
                     _szamlamozgas.Add(szm);
                 }
             }
@@ -82,27 +82,29 @@ namespace Költségvetés_Elemző
 
         private void btnAdat_Click(object sender, EventArgs e)
         {
-            var _szmlmzg =( from Szamlamozgas in _szamlamozgas
-                       select new
-                       {
-                           Dátum = Szamlamozgas.könyvelés_dátuma,
-                           Tranzakció_azonosító = Szamlamozgas.tranzakció_azonosító,
-                           Típus = Szamlamozgas.típus,
-                           Partnerszamlaneve = Szamlamozgas.partner_számla_elnevezése,
-                           Összeg = Szamlamozgas.összeg,
-                           Besorolás = Szamlamozgas.besorolás
+            
 
-
-                       }).ToList();
+          var   _szmlmzg =  (from Szamlamozgas in _szamlamozgas
+                            select new
+                            {
+                                Dátum = Szamlamozgas.könyvelés_dátuma,
+                                Tranzakció_azonosító = Szamlamozgas.tranzakció_azonosító,
+                                Típus = Szamlamozgas.típus,
+                                Partnerszamlaneve = Szamlamozgas.partner_számla_elnevezése,
+                                Összeg = Szamlamozgas.összeg,
+                                
+                            }).ToList();
 
             dataGridView1.DataSource = _szmlmzg;
             chart1.DataSource = _szamlamozgas;
 
         }
 
+        
+
         private void btn_Diagram_Click(object sender, EventArgs e)
         {
-            var series = chart1.Series[0];
+            var series = chart1.Series["Készpénz mozgás"];
             series.XValueMember = "könyvelés_dátuma";
             series.XValueType = ChartValueType.Date;
             series.YValueMembers = "összeg";

@@ -17,7 +17,8 @@ namespace Költségvetés_Elemző
         public double összeg { get; set; }
         public string deviza { get; set; }
 
-        public bool besorolás { get; set; } 
+       
+
 
     }
 }
